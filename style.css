@@ -1,0 +1,129 @@
+/* layout */
+html {
+    height: 100%;
+    background: #f9f9f9;
+  }
+  body {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Allerta Stencil', sans-serif;
+  }
+  .credit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.65em;
+    text-decoration: none;
+    color: #222;
+    transition: opacity 0.3s ease-in;
+  }
+  .credit:hover {
+    opacity: 0.8;
+  }
+  .feedback {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* svg illustration*/
+  .illustration {
+    --c-accent: #ec3667;
+    --c-dark: #3f3d56;
+    --c-light: #cbcdda;
+    --c-skin: #ffb9b9;
+    width: 100%;
+    max-height: 85vh;
+  }
+  .illustration g {
+    transform-origin: 50% 50%;
+  }
+  .cls-2 {
+    fill: none;
+    stroke: var(--c-dark);
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+  .cls-3 {
+    fill: var(--c-dark);
+  }
+  .cls-4 {
+    fill: var(--c-accent);
+  }
+  .cls-8 {
+    fill: var(--c-skin);
+  }
+  .cls-9 {
+    opacity: 0.1;
+  }
+  .cls-10 {
+    fill: var(--c-dark);
+  }
+  .cls-13 {
+    fill: var(--c-dark);
+  }
+  .cls-14 {
+    fill: var(--c-light);
+  }
+  /*color picker*/
+  .color-selector {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  [type="radio"] {
+    display: none;
+  }
+  [type="radio"]:checked + label:before {
+    box-shadow: 0px 0px 0px 2px #f9f9f9, 0 0 0 4px #cacaca;
+  }
+  label {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    font-size: 0.7em;
+  }
+  label:before {
+    display: inline-block;
+    content: '';
+    background: var(--c-bg);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  label[for=blue] {
+    --c-bg: var(--blue);
+  }
+  label[for=orange] {
+    --c-bg: var(--orange);
+  }
+  label[for=pink] {
+    --c-bg: var(--pink);
+  }
+  label[for=red] {
+    --c-bg: var(--red);
+  }
+  label[for=yellow] {
+    --c-bg: var(--yellow);
+  }
+  label[for=green] {
+    --c-bg: var(--green);
+  }
+  label[for=purple] {
+    --c-bg: var(--purple);
+  }
+  label[for=black] {
+    --c-bg: var(--black);
+  }
+  
